@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/', 'BlogController@index')->name('blog');
+Route::get('/blog', 'BlogController@index')->name('blog');
 
 
 
@@ -39,3 +39,8 @@ Auth::routes();
 Route::get('/dashboard', 'Backend\DashboardController@index')->name('dashboard');
 
 Route::resource('/backendblog', 'Backend\BackendBlogController');
+
+//leero sports routes
+
+Route::get('/','LeeroController@index')->name('index');
+
